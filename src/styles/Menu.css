@@ -1,0 +1,30 @@
+.menu {
+    height: 550px;
+    width: 200px;
+    background-color: black;
+    border-radius: 10px;
+    /* margin-right: 50px; */
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-inline: 5px;
+    padding-top: 5px;
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-align: center;
+    padding-bottom: 5px;
+    color: rgba(255, 255, 255, 0.87);
+}

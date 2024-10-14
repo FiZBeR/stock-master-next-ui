@@ -1,0 +1,31 @@
+.sectionOne {
+    display: flex;
+        
+}
+
+.tipeOne {
+    width: 290px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 10px 10px 10px ;
+}
+
+.tipeSpecial {
+    width: 290px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 10px 10px 10px;
+}
+
+.tipeTwo {
+    width: 450px;
+    height: 222px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.user {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,16 @@
+.div-header {
+    width: 266px;
+    padding: 10px;
+    height: 40px;
+    display: flex;
+}
+
+.titulo-header {
+    margin-inline: 10px;
+}
+
+.dot {
+    justify-self: end;
+    width: 15px;
+    height: 15px;
+}
