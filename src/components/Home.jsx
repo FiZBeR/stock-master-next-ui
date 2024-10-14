@@ -8,16 +8,17 @@ import { AlertStock } from './AlertStock';
 import { NavLink } from 'react-router-dom';
 import stock from '../assets/recibo-purple.svg'
 import team from '../assets/team-purple.svg'
+import {parseDate} from "@internationalized/date";
 
 export const Home = () => {
 
-  
+  let [value, setValue] = React.useState(parseDate("2024-03-07"));  
 
   return (
-    <div >
+    <div className='pt-[50px]'>
       <div className='sectionOne'>
 
-        <Card className='max-w-[400px] tipeOne'>
+        <Card className='max-w-[400px] tipeOne ml-[30px]'>
           <CardHeader className="flex gap-3">
             <Image
               alt="nextui logo"
@@ -33,10 +34,22 @@ export const Home = () => {
           </CardHeader>
           <Divider/>
           <CardBody>
-            <Usuario className='user'/>
-            <Usuario className='user'/>
-            <Usuario className='user'/>
-            <Usuario className='user'/>
+            <div className='mb-[5px]'>
+              <Usuario className='user mb-[5px]'/>
+            </div>
+            
+            <div className='mb-[5px]'>
+              <Usuario className='user mb-[5px]'/>
+            </div>
+
+            <div className='mb-[5px]'>
+              <Usuario className='user mb-[5px]'/>
+            </div>
+            
+            <div className='mb-[5px]'>
+              <Usuario className='user mb-[5px]'/>
+            </div>
+            
           </CardBody>
           <Divider/>
           <CardFooter>
@@ -69,13 +82,17 @@ export const Home = () => {
           </CardFooter>
         </Card>
 
-        <Calendar className='tipeOne max-w-[340px]' aria-label="Date (Page Behaviour)"  pageBehavior="single" />
+        <Calendar value={value} className='tipeOne max-w-[340px]' aria-label="Date (Page Behaviour)"  pageBehavior="single" />
         
       </div>
 
       <div className='sectionOne'>
 
-        <Table aria-label="Example static collection table" className='tipeTwo'>
+        <div >
+          <section className=' ml-[30px]'>
+            <p>Más Vendidos</p>
+          </section>
+          <Table aria-label="Example static collection table" className='tipeTwo ml-[30px] max-w-[430px]'>
             <TableHeader>
               <TableColumn>NAME</TableColumn>
               <TableColumn>ROLE</TableColumn>
@@ -103,37 +120,44 @@ export const Home = () => {
                 <TableCell>Vacation</TableCell>
               </TableRow>
             </TableBody>
-        </Table>
+          </Table>
+        </div>
 
-        <Table aria-label="Example static collection table" className='tipeTwo'>
-          <TableHeader>
-            <TableColumn>NAME</TableColumn>
-            <TableColumn>ROLE</TableColumn>
-            <TableColumn>STATUS</TableColumn>
-          </TableHeader>
-          <TableBody>
-            <TableRow key="1">
-              <TableCell>Tony Reichert</TableCell>
-              <TableCell>CEO</TableCell>
-              <TableCell>Active</TableCell>
-            </TableRow>
-            <TableRow key="2">
-              <TableCell>Zoey Lang</TableCell>
-              <TableCell>Technical Lead</TableCell>
-              <TableCell>Paused</TableCell>
-            </TableRow>
-            <TableRow key="3">
-              <TableCell>Jane Fisher</TableCell>
-              <TableCell>Senior Developer</TableCell>
-              <TableCell>Active</TableCell>
-            </TableRow>
-            <TableRow key="4">
-              <TableCell>William Howard</TableCell>
-              <TableCell>Community Manager</TableCell>
-              <TableCell>Vacation</TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
+        <div className=' ml-[30px]'>
+          <section>
+            <p>Productos</p>
+          </section>
+          <Table aria-label="Example static collection table" className='tipeTwo ml-[30px] max-w-[430px]'>
+            <TableHeader>
+              <TableColumn>NAME</TableColumn>
+              <TableColumn>ROLE</TableColumn>
+              <TableColumn>STATUS</TableColumn>
+            </TableHeader>
+            <TableBody className="text-black">
+              <TableRow key="1">
+                <TableCell>Tony Reichert</TableCell>
+                <TableCell>CEO</TableCell>
+                <TableCell>Active</TableCell>
+              </TableRow>
+              <TableRow key="2">
+                <TableCell>Zoey Lang</TableCell>
+                <TableCell>Technical Lead</TableCell>
+                <TableCell>Paused</TableCell>
+              </TableRow>
+              <TableRow key="3">
+                <TableCell>Jane Fisher</TableCell>
+                <TableCell>Senior Developer</TableCell>
+                <TableCell>Active</TableCell>
+              </TableRow>
+              <TableRow key="4">
+                <TableCell>William Howard</TableCell>
+                <TableCell>Community Manager</TableCell>
+                <TableCell>Vacation</TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </div>
+
       </div>
     </div>
   )

@@ -20,10 +20,10 @@ export const RutasMain = () => {
         <Routes>
             <Route path='/' element={<Inicio/>} >
                 <Route path='/' element={<Home/>}/>
-                <Route path='team' element={<Team/>} />
+                <Route path='team' element={<AllProducts/>} />
                 <Route path='calendario' element={<Calendario/>} />
                 <Route path='masvendidos' element={<MoreSells/>} />
-                <Route path='allProducts' element={<AllProducts/>} />
+                <Route path='allProducts' element={<Team/>} />
                 <Route path='crear' element={<Crear/>} />
                 <Route path='product/:id' element={<DetailsProduct/>} >
                     <Route path='editar:id' element={<Edit/>}/>
