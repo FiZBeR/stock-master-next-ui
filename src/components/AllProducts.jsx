@@ -65,7 +65,7 @@ export const AllProducts = () => {
   }, []);
 
   return (
-  <Table aria-label="Example table with custom cells">
+  <Table aria-label="Example table with custom cells" >
       <TableHeader columns={columns}>
         {(column) => (
           <TableColumn key={column.uid} align={column.uid === "actions" ? "center" : "start"}>

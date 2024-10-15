@@ -170,7 +170,7 @@ export const Team = () => {
 
   const topContent = React.useMemo(() => {
     return (
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 w-[840px] mt-[20px] ml-[20px]">
         <div className="flex justify-between gap-3 items-end">
           <Input
             isClearable
@@ -257,7 +257,7 @@ export const Team = () => {
 
   const bottomContent = React.useMemo(() => {
     return (
-      <div className="py-2 px-2 flex justify-between items-center">
+      <div className="py-2 px-2 flex justify-between items-center w-[840px]">
         <span className="w-[30%] text-small text-default-400">
           {selectedKeys === "all"
             ? "All items selected"
@@ -291,7 +291,7 @@ export const Team = () => {
       bottomContent={bottomContent}
       bottomContentPlacement="outside"
       classNames={{
-        wrapper: "max-h-[382px]",
+        wrapper: "max-h-[382px] w-[840px] ml-[20px]",
       }}
       selectedKeys={selectedKeys}
       selectionMode="multiple"
