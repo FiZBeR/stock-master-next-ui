@@ -35,19 +35,19 @@ export const Home = () => {
           <Divider/>
           <CardBody>
             <div className='mb-[5px]'>
-              <Usuario className='user mb-[5px]'/>
+              <Usuario className='user mb-[5px]' name={'Dayana'} descripcion={'Lider de Equipo'}/>
             </div>
             
             <div className='mb-[5px]'>
-              <Usuario className='user mb-[5px]'/>
+              <Usuario className='user mb-[5px]' name={'Cristian'} descripcion={'FrontEnd Developer'}/>
             </div>
 
             <div className='mb-[5px]'>
-              <Usuario className='user mb-[5px]'/>
+              <Usuario className='user mb-[5px]' name={'Alejandro'} descripcion={'Diseñador'}/>
             </div>
             
             <div className='mb-[5px]'>
-              <Usuario className='user mb-[5px]'/>
+              <Usuario className='user mb-[5px]' name={'Jose'} descripcion={'El de los tintos'}/>
             </div>
             
           </CardBody>
@@ -73,9 +73,9 @@ export const Home = () => {
           </CardHeader>
           <Divider/>
           <CardBody className="px-3 py-0 text-small text-default-400">
-            <AlertStock/>
-            <AlertStock/>
-            <AlertStock/>
+            <AlertStock producto={'Arroz 1Lb'} cantidad={8}/>
+            <AlertStock producto={'Retrovisor lateral '} cantidad={4}/>
+            <AlertStock producto={'Bolsa Agua 5L'} cantidad={2}/>
           </CardBody>
           <CardFooter className="gap-3">
             
