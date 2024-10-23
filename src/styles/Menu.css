@@ -1,10 +1,32 @@
 .menu {
-    height: 700px;
     width: 200px;
     background-color: black;
     border-radius: 10px;
     /* margin-right: 50px; */
     color: rgba(255, 255, 255, 0.87);
+    display: grid;
+    max-height: 700px;
+    grid-template-rows: 
+        auto 1fr auto;
+}
+
+.menuPartOne {
+    border: 1px sold white;
+}
+
+.menuPartTwo {
+    display: inline-grid;
+    grid-template-rows: repeat(6, 40px);
+    margin-top: 45px;
+}
+
+.menuPartThree {
+    max-height: 80px;
+}
+
+.menuItem {
+    display: inline-flex;
+    margin: 0 35px 0 15px;
 }
 
 .icon {
@@ -14,17 +36,16 @@
     padding-top: 5px;
 }
 
-.menuItem {
-    display: flex;
-    align-items: center;
-}
 
 li {
     list-style: none;
 }
 
 a {
-    text-align: center;
     padding-bottom: 5px;
     color: rgba(255, 255, 255, 0.87);
+}
+
+a:hover {
+    color: rgb(105, 45, 245)
 }

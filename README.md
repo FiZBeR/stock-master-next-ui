@@ -1,8 +1,15 @@
-# React + Vite
+# Stock Master
+Stock Master es una aplicación de gestión de inventarios diseñada para simplificar la administración y monitoreo de productos. Esta versión se centra en la creación de una interfaz visual intuitiva y amigable para el usuario.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Descripción
+Este proyecto es parte del trabajo final para la materia de Estructura de Datos. Actualmente, se está trabajando en la parte visual de la aplicación utilizando React como biblioteca principal para la construcción de la interfaz de usuario. La aplicación hace uso de Next UI para la creación de componentes reutilizables y estilizados, y Tailwind CSS para manejar el diseño y la apariencia.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Tecnologías Utilizadas
+* React: Biblioteca de JavaScript para construir interfaces de usuario.
+* Next UI: Librería de componentes para React, que facilita la construcción de interfaces visualmente atractivas y coherentes.
+* Tailwind CSS: Framework de utilidades CSS para crear diseños de manera eficiente y flexible.
+  
+# Características
+* Interfaz de usuario moderna y fácil de navegar.
+* Componentes reutilizables y personalizables.
+* Estilos responsivos utilizando Tailwind CSS.

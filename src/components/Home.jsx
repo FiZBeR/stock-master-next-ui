@@ -8,6 +8,8 @@ import { AlertStock } from './AlertStock';
 import { NavLink } from 'react-router-dom';
 import stock from '../assets/recibo-purple.svg'
 import team from '../assets/team-purple.svg'
+import sold from '../assets/sold.svg'
+import prduct from'../assets/product.svg'
 import {parseDate} from "@internationalized/date";
 
 export const Home = () => {
@@ -18,7 +20,7 @@ export const Home = () => {
     <div className='pt-[50px]'>
       <div className='sectionOne'>
 
-        <Card className='max-w-[400px] tipeOne ml-[30px]'>
+        <Card className='max-w-[400px] mx-h-[330px] tipeOne ml-[30px]'>
           <CardHeader className="flex gap-3">
             <Image
               alt="nextui logo"
@@ -57,7 +59,7 @@ export const Home = () => {
           </CardFooter>
         </Card>
         
-        <Card className="max-w-[340px] tipeSpecial">
+        <Card className="max-w-[340px] mx-h-[330px] tipeSpecial">
           <CardHeader className="flex gap-3">
             <Image
               alt="nextui logo"
@@ -82,17 +84,27 @@ export const Home = () => {
           </CardFooter>
         </Card>
 
-        <Calendar value={value} className='tipeOne max-w-[340px]' aria-label="Date (Page Behaviour)"  pageBehavior="single" />
+        <Calendar value={value} className='tipeOne max-w-[340px] mx-h-[330px]' aria-label="Date (Page Behaviour)"  pageBehavior="single" />
         
       </div>
 
       <div className='sectionOne'>
 
-        <div >
-          <section className=' ml-[30px]'>
-            <p>Más Vendidos</p>
-          </section>
-          <Table aria-label="Example static collection table" className='tipeTwo ml-[30px] max-w-[430px]'>
+        <div className=''>
+          <div className="flex gap-3 bg-white max-w-[500px] ml-[30px] rounded-t-lg">
+            <Image
+              alt="nextui logo"
+              height={40}
+              radius="sm"
+              src={sold}
+              width={40}
+            />
+            <div className="flex flex-col">
+              <p className="text-md">Más Vendidos</p>
+              <p className="text-small text-default-500">Alert!!</p>
+            </div>
+          </div>
+          <Table aria-label="Example static collection table" className='tipeTwo ml-[30px] max-w-[430px] mt-0 rounded-none rounded-b-lg' >
             <TableHeader>
               <TableColumn>NAME</TableColumn>
               <TableColumn>ROLE</TableColumn>
@@ -123,11 +135,23 @@ export const Home = () => {
           </Table>
         </div>
 
-        <div className=' ml-[30px]'>
-          <section>
-            <p>Productos</p>
-          </section>
-          <Table aria-label="Example static collection table" className='tipeTwo ml-[30px] max-w-[430px]'>
+        <div className=' ml-[30px] max-w-[500px]'>
+          
+          <div className="flex gap-3 bg-white max-w-[450px] ml-[30px] rounded-t-lg">
+              <Image
+                alt="nextui logo"
+                height={35}
+                radius="sm"
+                src={prduct}
+                width={35}
+                margin-top={10}
+              />
+              <div className="flex flex-col">
+                <p className="text-md">Productos</p>
+                <p className="text-small text-default-500">desde la A a la Z!!</p>
+              </div>
+          </div>
+          <Table aria-label="Example static collection table" className='tipeTwo ml-[30px] max-w-[500px] mt-0 rounded-none rounded-b-lg'>
             <TableHeader>
               <TableColumn>NAME</TableColumn>
               <TableColumn>ROLE</TableColumn>

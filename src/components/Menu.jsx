@@ -7,6 +7,7 @@ import crear from '../assets/plus-circle-svgrepo-com.svg'
 import ventas from '../assets/receipt-svgrepo-com.svg'
 import salida from '../assets/logout-svgrepo-com.svg'
 import opciones from '../assets/settings-svgrepo-com.svg'
+import stockmaster from '../assets/stockmaster.jpeg'
 import { NavLink } from 'react-router-dom';
 import '../styles/Menu.css'
 
@@ -14,9 +15,9 @@ export const Menu = () => {
   return (
     <div className='menu'>
       <div className='menuPartOne'>
-        {/* <img src={logo}/> */}
+        <img src={stockmaster} className='w-50 h-50'/>
       </div>
-      <nav className='menuPartTwo'>
+      <nav className='menuPartTwo '>
         <li className='menuItem'>
           <img src={home} className='icon'/>
           <NavLink to='/'>Inicio</NavLink>
@@ -44,10 +45,14 @@ export const Menu = () => {
       </nav>
 
       <div className='menuPartThree'>
-          <img src={opciones} className='icon'/>
-          <NavLink>Opciones</NavLink>
-          <img src={salida} className='icon'/>
-          <NavLink>Logout</NavLink>
+          <div className='menuItem mg-10'>
+            <img src={opciones} className='icon'/>
+            <NavLink>Opciones</NavLink>
+          </div>
+          <div className='menuItem'>
+            <img src={salida} className='icon'/>
+            <NavLink>Logout</NavLink>
+          </div>
       </div>
     </div>
   )
